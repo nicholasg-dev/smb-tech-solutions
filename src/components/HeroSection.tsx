@@ -1,11 +1,8 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Zap, Shield, TrendingUp } from 'lucide-react';
-
 const HeroSection = () => {
-  return (
-    <section className="relative bg-gradient-to-br from-blue-50 to-white py-20 lg:py-32">
+  return <section className="relative bg-gradient-to-br from-blue-50 to-white py-20 lg:py-32">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
@@ -47,9 +44,7 @@ const HeroSection = () => {
                 Start Your Transformation
                 <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
               </Button>
-              <Button size="lg" variant="outline" className="border-blue-600 text-blue-600 hover:bg-blue-50">
-                Schedule Consultation
-              </Button>
+              
             </div>
           </div>
 
@@ -79,8 +74,6 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default HeroSection;
