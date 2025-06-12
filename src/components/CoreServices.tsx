@@ -79,11 +79,7 @@ const CoreServices = () => {
           })}
         </div>
 
-        <div className="text-center">
-          <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white">
-            Explore All Services
-          </Button>
-        </div>
+
       </div>
     </section>
   );

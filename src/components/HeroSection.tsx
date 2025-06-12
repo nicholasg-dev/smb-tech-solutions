@@ -2,7 +2,23 @@ import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Zap, Shield, TrendingUp } from 'lucide-react';
 const HeroSection = () => {
-  return <section className="relative bg-gradient-to-br from-blue-50 to-white py-20 lg:py-32">
+  return <section className="relative py-20 lg:py-32 overflow-hidden">
+      {/* Background Video */}
+      <div className="absolute inset-0 w-full h-full">
+        <iframe
+          className="absolute inset-0 w-full h-full object-cover scale-150"
+          src="https://www.youtube.com/embed/sTQCRdEfybc?autoplay=1&mute=1&loop=1&playlist=sTQCRdEfybc&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1"
+          title="Background Video"
+          frameBorder="0"
+          allow="autoplay; encrypted-media"
+          allowFullScreen
+        />
+        {/* Overlay for content readability */}
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-50/90 to-white/90"></div>
+      </div>
+      
+      {/* Content */}
+      <div className="relative z-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
@@ -73,6 +89,7 @@ const HeroSection = () => {
             </div>
           </div>
         </div>
+      </div>
       </div>
     </section>;
 };

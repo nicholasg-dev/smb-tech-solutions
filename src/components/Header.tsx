@@ -13,9 +13,11 @@ const Header = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <h1 className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">
-              Evolutis
-            </h1>
+            <img 
+              src="/Assets/Evolutis Logo.png" 
+              alt="Evolutis Logo" 
+              className="h-16 w-auto"
+            />
           </div>
 
           {/* Desktop Navigation */}
