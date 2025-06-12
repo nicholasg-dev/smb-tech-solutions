@@ -14,7 +14,7 @@ const Header = () => {
           {/* Logo */}
           <div className="flex-shrink-0">
             <img 
-              src="/Assets/Evolutis Logo.png" 
+              src="/Evolutis Logo.png" 
               alt="Evolutis Logo" 
               className="h-16 w-auto"
             />
